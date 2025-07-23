@@ -11,10 +11,11 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# Incluir routers
-app.include_router(school.router)
-app.include_router(student.router)
-app.include_router(invoice.router)
+
+app.include_router(school.router, prefix="/api/schools", tags=["Schools"])
+app.include_router(student.router, prefix="/api/students", tags=["Students"])
+app.include_router(invoice.router, prefix="/api/invoices", tags=["Invoices"])
+
 
 @app.get("/")
 def read_root():
