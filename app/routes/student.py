@@ -4,6 +4,8 @@ from app.schemas.student import StudentCreate, StudentResponse
 from app.crud import student as crud_student
 from app.database import SessionLocal
 from app.models.invoice import Invoice
+from fastapi import HTTPException, status
+
 
 
 router = APIRouter()
