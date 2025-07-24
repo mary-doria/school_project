@@ -22,6 +22,9 @@ services:
       - db
     environment:
       DATABASE_URL: postgresql://postgres:admin123@db:5432/matilda
+    dns:
+      - 8.8.8.8
+      - 1.1.1.1
 
 volumes:
   postgres_data:
