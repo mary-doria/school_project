@@ -100,3 +100,53 @@ Una vez la app esté corriendo, accede a la documentación interactiva:
 ```
 
 ---
+
+## 🖼️ Frontend y Mock Backend
+
+### Inicializar Frontend
+
+Para levantar la aplicación del frontend en desarrollo local:
+
+1. Ubícate en la carpeta del frontend example-app
+2. Ejecuta los siguientes comandos:
+
+```bash
+npm install
+npm run dev
+```
+Esto iniciará la app en http://localhost:5173 (puerto por defecto de Vite).
+
+Inicializar Mock (JSON Server)
+```bash
+npm install -g json-server
+json-server --watch db.json --port 3001
+```
+**🔹 Imagen 1: Schools Overview**
+
+Muestra la lista de colegios registrados, con pestañas navegables por institución. Al seleccionar un colegio, se despliega una tabla con los estudiantes asociados, su correo, deuda total y estado del pago.
+
+---
+
+## 🖼️ Vista Previa de la Aplicación Frontend
+
+A continuación se presentan capturas de pantalla que ilustran la interfaz de usuario del sistema:
+
+<p align="center">
+  <img src="Schools_screenshot.PNG" width="600" alt="Vista general de colegios"/>
+</p>
+
+**🔹 Imagen 1: Schools Overview**
+
+Muestra la lista de colegios registrados, con pestañas navegables por institución. Al seleccionar un colegio, se despliega una tabla con los estudiantes asociados, su correo, deuda total y estado del pago.
+
+---
+
+<p align="center">
+  <img src="Student_screenshot.PNG" width="600" alt="Detalle del estudiante Zoito García"/>
+</p>
+
+**🔹 Imagen 2: Student Detail**
+
+Vista detallada del estudiante seleccionado, incluyendo el total pendiente y una tabla con sus facturas: descripción, monto, valor adeudado y acciones disponibles como creación de nueva factura.
+
+---

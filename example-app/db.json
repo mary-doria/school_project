@@ -1,0 +1,236 @@
+{
+  "schools": [
+    {
+      "id": "1",
+      "name": "Greenwood High"
+    },
+    {
+      "id": "2",
+      "name": "Lakeside Academy"
+    },
+    {
+      "id": "3",
+      "name": "Mountainview Prep"
+    }
+  ],
+  "students": [
+    {
+      "id": "101",
+      "school_id": 1,
+      "name": "Zoito García",
+      "email": "zoito@gmail.com"
+    },
+    {
+      "id": "102",
+      "school_id": 1,
+      "name": "María López",
+      "email": "maria.lopez@example.com"
+    },
+    {
+      "id": "103",
+      "school_id": 1,
+      "name": "Carlos Pérez",
+      "email": "carlos.perez@example.com"
+    },
+    {
+      "id": "201",
+      "school_id": 2,
+      "name": "Sitencio Ramírez",
+      "email": "sito@gmail.com"
+    },
+    {
+      "id": "202",
+      "school_id": 2,
+      "name": "Ana Morales",
+      "email": "ana.morales@example.com"
+    },
+    {
+      "id": "203",
+      "school_id": 2,
+      "name": "Luis Fernández",
+      "email": "luis.fernandez@example.com"
+    },
+    {
+      "id": "301",
+      "school_id": 3,
+      "name": "Camila Rodríguez",
+      "email": "camila.rodriguez@example.com"
+    },
+    {
+      "id": "302",
+      "school_id": 3,
+      "name": "Diego Sánchez",
+      "email": "diego.sanchez@example.com"
+    },
+    {
+      "id": "303",
+      "school_id": 3,
+      "name": "Lucía Herrera",
+      "email": "lucia.herrera@example.com"
+    }
+  ],
+  "invoices": [
+    {
+      "id": "1001",
+      "student_id": 101,
+      "amount": 150,
+      "paid": true
+    },
+    {
+      "id": "1002",
+      "student_id": 101,
+      "amount": 75.5,
+      "paid": true
+    },
+    {
+      "id": "1003",
+      "student_id": 101,
+      "amount": 200,
+      "paid": true
+    },
+    {
+      "id": "1004",
+      "student_id": 102,
+      "amount": 120,
+      "paid": true
+    },
+    {
+      "id": "1005",
+      "student_id": 102,
+      "amount": 60,
+      "paid": false
+    },
+    {
+      "id": "1006",
+      "student_id": 103,
+      "amount": 300,
+      "paid": false
+    },
+    {
+      "id": "1007",
+      "student_id": 103,
+      "amount": 80,
+      "paid": true
+    },
+    {
+      "id": "1008",
+      "student_id": 103,
+      "amount": 45,
+      "paid": false
+    },
+    {
+      "id": "2001",
+      "student_id": 201,
+      "amount": 50,
+      "paid": false
+    },
+    {
+      "id": "2002",
+      "student_id": 201,
+      "amount": 100,
+      "paid": true
+    },
+    {
+      "id": "2003",
+      "student_id": 201,
+      "amount": 75,
+      "paid": false
+    },
+    {
+      "id": "2004",
+      "student_id": 202,
+      "amount": 125,
+      "paid": false
+    },
+    {
+      "id": "2005",
+      "student_id": 202,
+      "amount": 90,
+      "paid": true
+    },
+    {
+      "id": "2006",
+      "student_id": 203,
+      "amount": 220,
+      "paid": false
+    },
+    {
+      "id": "2007",
+      "student_id": 203,
+      "amount": 40,
+      "paid": true
+    },
+    {
+      "id": "3001",
+      "student_id": 301,
+      "amount": 180,
+      "paid": true
+    },
+    {
+      "id": "3002",
+      "student_id": 301,
+      "amount": 60,
+      "paid": false
+    },
+    {
+      "id": "3003",
+      "student_id": 301,
+      "amount": 95,
+      "paid": false
+    },
+    {
+      "id": "3004",
+      "student_id": 302,
+      "amount": 250,
+      "paid": false
+    },
+    {
+      "id": "3005",
+      "student_id": 302,
+      "amount": 125,
+      "paid": true
+    },
+    {
+      "id": "3006",
+      "student_id": 303,
+      "amount": 70,
+      "paid": true
+    },
+    {
+      "id": "3007",
+      "student_id": 303,
+      "amount": 130,
+      "paid": false
+    },
+    {
+      "id": "3008",
+      "student_id": 303,
+      "amount": 55,
+      "paid": false
+    },
+    {
+      "id": "f8b8",
+      "student_id": "101",
+      "amount": 100,
+      "paid": false
+    },
+    {
+      "id": "105a",
+      "student_id": "101",
+      "amount": 50,
+      "paid": false
+    },
+    {
+      "id": "a80a",
+      "student_id": "101",
+      "amount": 80,
+      "paid": true
+    },
+    {
+      "id": "615e",
+      "student_id": "101",
+      "amount": 50,
+      "paid": false
+    }
+  ]
+}
