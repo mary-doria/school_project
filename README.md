@@ -31,8 +31,8 @@ Sigue estos pasos para levantar la aplicación en tu entorno local:
 ### 1️⃣ Clona el repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/school-api.git
-cd school-api
+git clone https://github.com/mary-doria/school_project.git
+cd SchoolProject
 ```
 
 ### 2️⃣ Crea tu archivo `.env` (opcional)
