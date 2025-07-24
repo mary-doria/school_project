@@ -5,7 +5,8 @@ from app.crud import school as crud_school
 from app.database import SessionLocal
 from app.models.student import Student
 from app.models.invoice import Invoice
-
+from fastapi import HTTPException, status
+from sqlalchemy import func
 
 router = APIRouter()
 
@@ -36,9 +37,7 @@ def update_school(school_id: int, school: SchoolCreate, db: Session = Depends(ge
 def delete_school(school_id: int, db: Session = Depends(get_db)):
     crud_school.delete_school(db, school_id)
     return {"message": "School deleted successfully"}
-
-from sqlalchemy import func  # asegúrate de importar esto
-
+  
 @router.get("/{school_id}/balance")
 def get_school_balance(school_id: int, db: Session = Depends(get_db)):
     school = crud_school.get_school(db, school_id)

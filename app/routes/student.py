@@ -5,7 +5,7 @@ from app.crud import student as crud_student
 from app.database import SessionLocal
 from app.models.invoice import Invoice
 from fastapi import HTTPException, status
-
+from sqlalchemy import func 
 
 
 router = APIRouter()
@@ -37,8 +37,6 @@ def update_student(student_id: int, student: StudentCreate, db: Session = Depend
 def delete_student(student_id: int, db: Session = Depends(get_db)):
     crud_student.delete_student(db, student_id)
     return {"message": "Student deleted successfully"}
-
-from sqlalchemy import func  # asegúrate de importar esto
 
 @router.get("/{student_id}/balance")
 def get_student_balance(student_id: int, db: Session = Depends(get_db)):
