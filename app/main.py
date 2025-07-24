@@ -19,4 +19,5 @@ app.include_router(invoice.router, prefix="/api/invoices", tags=["Invoices"])
 
 @app.get("/")
 def read_root():
-    return {"message": "Hola Mundo"}
+    return {"message": "Hello World"}
+

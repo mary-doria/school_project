@@ -6,7 +6,7 @@ from fastapi import HTTPException, status
 
 def create_student(db: Session, student: StudentCreate):
     try:
-        db_student = Student(**student.dict())
+        db_student = Student(**student.model_dump())  
         db.add(db_student)
         db.commit()
         db.refresh(db_student)
@@ -42,7 +42,7 @@ def get_student(db: Session, student_id: int):
 def update_student(db: Session, student_id: int, updated_student: StudentCreate):
     student = get_student(db, student_id)
     try:
-        for key, value in updated_student.dict().items():
+        for key, value in updated_student.model_dump().items():  
             setattr(student, key, value)
         db.commit()
         db.refresh(student)

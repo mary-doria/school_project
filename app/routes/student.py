@@ -17,7 +17,7 @@ def get_db():
     finally:
         db.close()
 
-@router.post("/", response_model=StudentResponse)
+@router.post("/", response_model=StudentResponse, status_code=status.HTTP_201_CREATED)
 def create_student(student: StudentCreate, db: Session = Depends(get_db)):
     return crud_student.create_student(db, student)
 
